@@ -1,4 +1,5 @@
 def part_one():
+    """Count how many lines are greater than the previous one."""
     with open("input/day01.txt") as fr:
         previous = None
         increases = 0
@@ -13,6 +14,8 @@ def part_one():
 
 
 def part_two():
+    """Count how many lines are greater than 4 lines before."""
+
     with open("input/day01.txt") as fr:
         a, b, c, d = None, None, None, None
         increases = 0
