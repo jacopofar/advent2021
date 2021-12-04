@@ -11,3 +11,4 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 01: done
 * day 02: done
 * day 03: done
+* day 04: done
