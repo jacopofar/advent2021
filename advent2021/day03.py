@@ -30,7 +30,7 @@ def part_one(lines):
 
 
 def part_two(lines):
-    """Filter by most and leats common prefix iteratively, multiply the results."""
+    """Filter by most and least common prefix iteratively, multiply the results."""
 
     r1 = find_rating(lines, "high")
     r2 = find_rating(lines, "low")
