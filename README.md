@@ -30,3 +30,9 @@ A smarter solution is to calculate the offsets in the two axes, a value that is 
 Then, we start from the first coordinate and increase X and Y by their offsets until we reach the end point. This makes the code shorter and most importantly easier to read. It's also a bit faster.
 
 A second optimization is applied to be able to handle large inputs (note: this was not part of the original advent of code problem!). If segments have coordinates as large as 10 millions, enumerating all the points becomes hard if not impossible. A solution is to calculate only points and intersections in a small tile, and iterate over the tiles. Once a tile is calculated only the amount of intersection is kept, so the memory usage remains low.
+
+## Day 07
+
+We don't need to iterate over all possible crab-position combinations.
+Instead, we can go from left to right and keep the count of how many crabs we found so far and how fast the total distance is growing.
+We need to do it twice (left-to-right and back) and go from `O(p * c)` to `O(p)` where `p` is the amount of positions and `c` the amount of crabs.
