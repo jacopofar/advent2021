@@ -15,6 +15,8 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 04: done
 * day 05: done (+ nicer solution)
 * day 06: done
+* day 07: done
+
 ## Nicer solutions
 
 In the folder `advent2021_nicer` you can find a few improved solutions, not covered in the videos.
