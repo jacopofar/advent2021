@@ -40,3 +40,8 @@ A second optimization is applied to be able to handle large inputs (note: this w
 We don't need to iterate over all possible crab-position combinations.
 Instead, we can go from left to right and keep the count of how many crabs we found so far and how fast the total distance is growing.
 We need to do it twice (left-to-right and back) and go from `O(p * c)` to `O(p)` where `p` is the amount of positions and `c` the amount of crabs.
+
+## Day 09
+
+The problem doesn't state it explicitly, but every basid is delimited by 9s or the grid edges. This is a result of the fact 9s are in no basin and each cell can be in only one basin at the time, which is possible only when 9s form borders.
+This eliminates the need to search for taller neighbors and the code can be a bit shorter.
