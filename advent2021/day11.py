@@ -53,10 +53,19 @@ def part_one(grid):
             print("".join(str(n) for n in row))
         total_flashes += flash_count
         print(f"Step: {s} flashes: {flash_count}, total: {total_flashes}")
+    return total_flashes
 
 
 def part_two(grid):
-    ...
+    s = 1
+    while True:
+        grid, flash_count = next_step(grid)
+        print(f"Step: {s} flashes: {flash_count}")
+        if flash_count == SIZE ** 2:
+            # we could just return here, but I keep it close to the video
+            break
+        s += 1
+    return s
 
 
 if __name__ == "__main__":
@@ -66,4 +75,4 @@ if __name__ == "__main__":
             grid.append([int(v) for v in line.strip()])
 
     print(part_one(grid))
-    print(part_two())
+    print(part_two(grid))
