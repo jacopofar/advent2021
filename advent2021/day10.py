@@ -57,8 +57,6 @@ def part_two(lines):
     total = sorted(total)
     return total[len(total) // 2]
 
-    return total
-
 
 if __name__ == "__main__":
     with open("input/day10.txt") as fr:
