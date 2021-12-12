@@ -1,17 +1,17 @@
 def part_one(edges):
-    solution = [['start']]
+    solution = [["start"]]
     while True:
         new_list = []
         # calculate all continuations of solution
         # and put them in new_list
         for path in solution:
             last_node = path[-1]
-            if last_node == 'end':
+            if last_node == "end":
                 new_list.append(path)
                 continue
             for candidate_next in edges[last_node]:
                 # if start, ignore it
-                if candidate_next == 'start':
+                if candidate_next == "start":
                     continue
                 # if lowercase and already there, ignore it
                 if candidate_next.islower() and candidate_next in path:
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     with open("input/day12.txt") as fr:
         edges = {}
         for line in fr:
-            s, _, e = line.strip().partition('-')
+            s, _, e = line.strip().partition("-")
             edges[s] = edges.get(s, []) + [e]
             edges[e] = edges.get(e, []) + [s]
 
