@@ -20,6 +20,7 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 09: done
 * day 10: done
 * day 11: done
+* day 12: done
 
 ## Nicer solutions
 
