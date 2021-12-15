@@ -10,12 +10,13 @@ def part_one(cells):
             # add edge to the total_risk
             total_risk[(x, y)] = risk_so_far
             for (nx, ny) in [(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)]:
-                # for each neighbor not already in edge or total_risk
+                # for each neighbor not already explored
                 if (nx, ny) in cells and (nx, ny) not in total_risk:
                     # calculate the risk of that neighbor, add it to new_edge
                     if (nx, ny) in new_edge:
-                        new_edge[(nx, ny)] = max(
-                            risk_so_far + cells[(nx, ny)], new_edge[(nx, ny)]
+                        new_edge[(nx, ny)] = min(
+                            risk_so_far + cells[(nx, ny)],
+                            new_edge[(nx, ny)]
                         )
                     else:
                         new_edge[(nx, ny)] = risk_so_far + cells[(nx, ny)]
