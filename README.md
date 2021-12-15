@@ -23,6 +23,7 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 12: done
 * day 13: done
 * day 14: done
+* day 15: done part 1, part 2 works only on sample input
 
 
 ## Nicer solutions
