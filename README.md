@@ -24,7 +24,8 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 13: done
 * day 14: done
 * day 15: done
-
+* day 16: skipped, I didn't have time and didn't look very interesting
+* day 17: done (no video, had no time)
 
 ## Nicer solutions
 
