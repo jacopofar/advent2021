@@ -1,6 +1,6 @@
 # Advent of code 2021
 
-These are the solution to the Advent of code 2021 in Python.
+These are the solution to the [Advent of code 2021](https://adventofcode.com/) in Python.
 
 The goal of this repo is to show some practical live coding and how a problem is solved quickly, and how issues are troubleshoot.
 
