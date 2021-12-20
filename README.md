@@ -27,7 +27,8 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 16: skipped, I didn't have time and didn't look very interesting
 * day 17: done (no video, had no time)
 * day 18: skipped, very long description and no time
-* day 19: done (no video, had no time so far)
+* day 19: done (video description, no live coding)
+* day 20: done with an ugly workaround
 ## Nicer solutions
 
 In the folder `advent2021_nicer` you can find a few improved solutions, not covered in the videos.
@@ -52,5 +53,14 @@ We need to do it twice (left-to-right and back) and go from `O(p * c)` to `O(p)`
 
 ## Day 09
 
-The problem doesn't state it explicitly, but every basid is delimited by 9s or the grid edges. This is a result of the fact 9s are in no basin and each cell can be in only one basin at the time, which is possible only when 9s form borders.
+The problem doesn't state it explicitly, but every basin is delimited by 9s or the grid edges. This is a result of the fact 9s are in no basin and each cell can be in only one basin at the time, which is possible only when 9s form borders.
 This eliminates the need to search for taller neighbors and the code can be a bit shorter.
+
+## Day 20
+
+Here the problem seems simple: we iterate over the coordinates and from the small 3x3 area calculate the new set of values. The problem is that the first value in the "algorithm" can be a #, which means we end up with an infinite grid.
+
+I tried to handle this by passing an infinite_on flag meaning that the values outside the search area have to be handled as # or not.
+The function calculating the step also handles this flag, so the infinite grid can be represented.
+
+The approach seems sound and works on the sample input I crafted to test it, but fails on the real problem input. There must be some edge case to handle, but I have no time so used an ugly (but working!) approach: by adding some abundant padding and removing it at the end, the infinite can be ignored as long as the steps to calculate are lower than the padding.
