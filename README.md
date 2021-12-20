@@ -26,7 +26,8 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 15: done
 * day 16: skipped, I didn't have time and didn't look very interesting
 * day 17: done (no video, had no time)
-
+* day 18: skipped, very long description and no time
+* day 19: done (no video, had no time so far)
 ## Nicer solutions
 
 In the folder `advent2021_nicer` you can find a few improved solutions, not covered in the videos.
