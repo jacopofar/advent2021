@@ -94,6 +94,7 @@ def part_one(algo, coords):
     coords = dumb_trunc(coords)
     return len(coords)
 
+
 def part_two(algo, coords):
     coords = dumb_padding(coords)
     for i in range(50):
@@ -102,6 +103,7 @@ def part_two(algo, coords):
     coords = dumb_trunc(coords)
 
     return len(coords)
+
 
 def visualize(coords, background_on):
     min_x, max_x, min_y, max_y = edges(coords)
