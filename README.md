@@ -29,6 +29,7 @@ There's no nice test or formatting, except for some typos or docstrings I keep t
 * day 18: skipped, very long description and no time
 * day 19: done (video description, no live coding)
 * day 20: done with an ugly workaround
+* day 21: done (no live coding)
 ## Nicer solutions
 
 In the folder `advent2021_nicer` you can find a few improved solutions, not covered in the videos.
